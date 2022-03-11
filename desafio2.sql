@@ -1,6 +1,6 @@
 SELECT
 	COUNT(DISTINCT m.tracks) AS cancoes,
-  COUNT(DISTINCT art.artist_name) AS artistas,
+  COUNT(DISTINCT art.artistName) AS artistas,
   COUNT(DISTINCT alb.title) AS albuns
 FROM musics AS m
 INNER JOIN albuns AS alb

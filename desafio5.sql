@@ -1,9 +1,9 @@
 SELECT
-	msc.tracks AS cancoes,
+	msc.tracks AS cancao,
   COUNT(*) AS reproducoes
 FROM reproductionHistory AS rh
 INNER JOIN musics AS msc
 ON msc.track_id = rh.track_id
-GROUP BY cancoes
-ORDER BY reproducoes DESC, cancoes ASC
+GROUP BY cancao
+ORDER BY reproducoes DESC, cancao ASC
 LIMIT 2;
